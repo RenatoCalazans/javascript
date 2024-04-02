@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiro passos com dom</title>
+    <style>
+        body{
+            background: red;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            text-align: center;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando estudos com dom</h1>
+    <p>aqui vai o resultado</p>
+    <p>apredendo a usar <strong>Dom</strong> em javascript</p>
+    <div id="msg">clique em mim</div>
+    <script>
+       //  var n1 =window.document.getElementsByTagName('p')[1]//exemplo da tag/marca
+        // document.write(n1.innerHTML)//pega o texto dentro da filhas 
+
+        /*var d = window.document.getElementById('msg')
+        d.style.background = 'gray'*/ // aqui eh sobre a tag id
+
+        //var r = window.document.getElementsByName('msg')[0]//como ta no plural elements tenho q colocar o []
+        //r.style.background = 'blue'
+        
+       var a = window.document.querySelector('div#msg')
+       a.style.background = 'yellow'
+       
+        
+    </script>
+</body>
+</html>

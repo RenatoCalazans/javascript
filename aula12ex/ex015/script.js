@@ -4,10 +4,10 @@ function verificar(){
     var fano =document.getElementById('txtano')
     var res =document.getElementById('res')
 
-    if(fano.value.lenght == 0 || fano.value > ano ){
-        window.alert('verifique o dados e tente novamente')
+    if(fano.value.length ==0 || fano.value > ano){
+        window.alert('[erro] verifique os dados e tente novamente')
     }else{
-        var radsex=document.getElementsByName('radsex')
+        var fsex = document.getElementsByName('radsex')
         var idade = ano - Number(fano.value)
         var genero =''
         var img = document.createElement('img')
